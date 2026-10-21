@@ -19,7 +19,7 @@ Perguntas que o projeto vai responder ao longo dos RAs:
 
 ## Dados
 
-- **Fonte:** [Bakery Sales, Customer & Inventory Analytics Dataset](https://www.kaggle.com/datasets/sdcloud/historical-bakery-sales-dataset), publicado no Kaggle por `sdcloud` (acesso em 20/10/2026).
+- **Fonte:** [Bakery Sales, Customer & Inventory Analytics Dataset](https://www.kaggle.com/datasets/sdcloud/historical-bakery-sales-dataset), publicado no Kaggle por `sdcloud` (versão 2, acesso em 20/10/2026).
 - **Licença:** CC0 (domínio público). Por isso o CSV original está versionado em `data/raw/`.
 - **Formato:** CSV, UTF-8 com BOM, 19.321 linhas e 40 colunas.
 - **Cobertura:** 01/01/2023 a 31/12/2024, 3 lojas, 35 produtos e 500 clientes.
@@ -50,7 +50,7 @@ padaria-data-analytics/
 Precisa de Python 3.10 ou mais novo e, para o RA2, de Java 17 (exigido pelo Spark 4).
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/rafaeusn/padaria-data-analytics.git
 cd padaria-data-analytics
 python -m pip install -r requirements.txt
 jupyter notebook projeto_data_analytics.ipynb
