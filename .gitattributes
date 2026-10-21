@@ -1,0 +1,2 @@
+# mantém os CSV exatamente como vieram (sem conversão de quebra de linha)
+*.csv -text

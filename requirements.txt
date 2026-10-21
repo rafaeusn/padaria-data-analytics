@@ -1,0 +1,4 @@
+pandas==2.2.3
+numpy
+pyspark==4.0.3
+jupyter

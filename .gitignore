@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+venv/
+
+# arquivos que o Spark cria ao rodar local
+spark-warehouse/
+metastore_db/
+derby.log
