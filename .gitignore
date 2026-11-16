@@ -7,3 +7,6 @@ venv/
 spark-warehouse/
 metastore_db/
 derby.log
+
+# cache dos testes
+.pytest_cache/
