@@ -61,7 +61,7 @@ Precisa de Python 3.10 ou mais novo e, só para o RA2, de Java 17 (exigido pelo 
 git clone https://github.com/rafaeusn/padaria-data-analytics.git
 cd padaria-data-analytics
 python -m pip install -r requirements.txt
-jupyter notebook
+python -m notebook
 ```
 
 Abra o notebook desejado e rode todas as células em ordem (*Kernel > Restart & Run All*):
@@ -73,7 +73,7 @@ Abra o notebook desejado e rode todas as células em ordem (*Kernel > Restart & 
 
 O notebook do RA3 não depende do Spark nem do Java: ele lê `data/processed/bakery_sales_preparado.csv` e, se esse arquivo não existir, reconstrói o preparo do RA1 a partir de `data/raw/`.
 
-**Se aparecer `ModuleNotFoundError`** (por exemplo, `No module named 'sklearn'`), o Jupyter está usando outro Python, diferente daquele em que você instalou o `requirements.txt`. Registre o ambiente como kernel e selecione-o em *Kernel > Change kernel*:
+Use `python -m notebook` (e não só `jupyter notebook`): assim o Jupyter roda no mesmo Python em que o `requirements.txt` foi instalado. **Se mesmo assim aparecer `ModuleNotFoundError`** (por exemplo, `No module named 'sklearn'`), o notebook está usando outro Python. Registre o ambiente como kernel e selecione-o em *Kernel > Change kernel*:
 
 ```bash
 python -m ipykernel install --user --name padaria --display-name "Python (padaria)"

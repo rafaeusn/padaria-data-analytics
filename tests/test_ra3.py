@@ -41,7 +41,7 @@ def execucao(tmp_path_factory):
         'argv': [sys.executable, '-m', 'ipykernel_launcher', '-f', '{connection_file}'],
         'display_name': 'RA3 (pytest)', 'language': 'python'}), encoding='utf-8')
     ambiente = {**os.environ, 'JUPYTER_PATH': str(pasta / 'jupyter')}
-    comando = [sys.executable, '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute',
+    comando = [sys.executable, '-m', 'nbconvert', '--to', 'notebook', '--execute',
                '--ExecutePreprocessor.kernel_name=ra3-pytest', '--ExecutePreprocessor.timeout=600',
                '--output', 'executado.ipynb', NOTEBOOK.name]
     resultado = subprocess.run(comando, cwd=pasta, capture_output=True, text=True, env=ambiente)
